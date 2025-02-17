@@ -1,0 +1,17 @@
+.Card{
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    display: block;
+    border: 4px solid #090909;
+}
+img{
+    border-radius: 20px;
+    border: 8px solid #fff;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+}
