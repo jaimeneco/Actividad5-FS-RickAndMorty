@@ -31,3 +31,47 @@ const Usuario = ({ datos }) => {
         </>
     )
 }
+
+import { useEffect, useState } from "react";
+
+// export const FetchUsers = () => {
+//     const [users, setUsers] = useState([]);
+//     const [loading, setLoading] = useState(true);
+
+//     const loadData = async () => {
+
+//         try {
+//             const response = await fetch('https://jsonplaceholder.typicode.com/users');
+//             if (!response.ok) {
+//                 throw new Error("Error al obtener usuarios");
+//             }
+
+//             const data = await response.json();
+//             setUsers(data);
+//             setLoading(false);
+
+//         } catch (error) {
+//             console.error("Error en el Fetch: ", error);
+//             setLoading(false);
+//         }
+//     }
+
+
+
+//         useEffect(() => {
+//             loadData();
+//         }, []);
+
+
+//         return (
+//             <div>
+//                 <h2>FetchUsers</h2>
+//                 { loading   ? ( <p>Buscando datos...</p> )
+//                             : ( <ul>
+//                                    { users.map( user => (
+//                                         <li key={user.id}> {user.name} </li>
+//                                     ))}
+//                                 </ul>)}
+//             </div>
+//         );
+//     }
