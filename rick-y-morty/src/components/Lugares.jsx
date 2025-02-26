@@ -1,6 +1,4 @@
 import { Datos } from "./Datos";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
 import React, { useState, useEffect } from "react";
 
 export const Lugares = () => {
@@ -14,7 +12,6 @@ export const Lugares = () => {
 
     return (
         <>
-        <Header />
         <div>
             <h2>Lugares</h2>
             <ul>
@@ -23,7 +20,6 @@ export const Lugares = () => {
                 ))}
             </ul>
         </div>
-        <Footer />
         </>
     );
 };

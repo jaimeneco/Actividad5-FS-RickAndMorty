@@ -1,7 +1,5 @@
 import { Datos } from "./Datos";
 import React, { useState, useEffect } from "react";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
 
 export const Episodios = () => {
     const [episodios, setEpisodios] = useState([]);
@@ -14,7 +12,6 @@ export const Episodios = () => {
 
     return (
         <>
-        <Header />
         <div>
             <h2>Episodios</h2>
             <ul>
@@ -23,7 +20,6 @@ export const Episodios = () => {
                 ))}
             </ul>
         </div>
-        <Footer />
         </>
     );
 };
