@@ -15,8 +15,8 @@ export const Episodios = () => {
         <div>
             <h2>Episodios</h2>
             <ul>
-                {episodios.map((ep) => (
-                    <li key={episodios.id}>{episodios.name} - {episodios.air_date}</li>
+                {episodios.map((episodios) => (
+                    <li key={episodios.id}>{episodios.name} - {episodios.episode}</li>
                 ))}
             </ul>
         </div>

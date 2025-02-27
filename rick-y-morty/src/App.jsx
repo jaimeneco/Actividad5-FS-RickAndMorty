@@ -8,29 +8,32 @@ import { Episodios } from "./components/Episodios";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
+// const Header = () => {
+//   return (
+//     <header>
+//       <img className="logo" src="./img/logo-rickMorty.png"></img>
+//       <nav>
+//         <button><Link to="/">Personajes</Link></button>
+//         <button><Link to="/locations">Lugares</Link></button>
+//         <button><Link to="/episodes">Episodios</Link></button>
+//       </nav>
+//     </header>
+//   );
+// };
 
 const App = () => {
   return (
-    <>
-    <Header />
-    <Characters/>
-    <Lugares />
-    <Episodios />
-    <Footer />
-    </>
-
-    // <Router>
-    //   <nav>
-    //     <Link to="/">Personajes</Link>
-    //     <Link to="/locations">Lugares</Link>
-    //     <Link to="/episodes">Episodios</Link>
-    //   </nav>
-    //   <Routes>
-    //     <Route path="/" element={<Personajes />} />
-    //     <Route path="/locations" element={<Lugares />} />
-    //     <Route path="/episodes" element={<Episodios />} />
-    //   </Routes>
-    // </Router>
+    <Router>
+      <Header />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Characters />} />
+          <Route path="/locations" element={<Lugares />} />
+          <Route path="/episodes" element={<Episodios />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
 };
 
